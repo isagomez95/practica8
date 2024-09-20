@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        #galeria {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #6a1b9a;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .grid-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <section id="galeria">
+        <h2>Referencias de clientes</h2>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="img/1.jpeg" alt="Descripción de la Imagen 1">
+            </div>
+            <div class="grid-item">
+                <img src="img/2.jpeg" alt="Descripción de la Imagen 2">
+            </div>
+            <div class="grid-item">
+                <img src="img/3.jpeg" alt="Descripción de la Imagen 3">
+            </div>
+            <div class="grid-item">
+                <img src="img/4.jpeg" alt="Descripción de la Imagen 4">
+            </div>
+            <div class="grid-item">
+                <img src="img/5.jpeg" alt="Descripción de la Imagen 5">
+            </div>
+        </div>
+    </section>
+    <section></section>
+        <a href="index.html">Regresar al menú</a>   
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Eloisa Gomez</p>
+    </footer>
+</body>
+</html>
